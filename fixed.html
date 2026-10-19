@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>It's a Date ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+	<meta name="robots" content="noindex, nofollow">
+
+</head>
+
+
+<body class="fixed-page">
+
+
+    <!-- Sparkles -->
+
+    <div class="sparkles">
+
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>✨</span>
+        <span>✦</span>
+
+    </div>
+
+
+    <!-- Floating hearts -->
+
+    <div class="final-hearts">
+
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+
+    </div>
+
+
+    <!-- Final box -->
+
+    <div class="fixed-box">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+
+        <h1>
+            It's a Date! 💕
+        </h1>
+
+
+        <p class="fixed-subtitle">
+            Our day out is officially fixed! 🥰
+        </p>
+
+
+        <div class="date-card">
+
+            <div class="date-card-title">
+                📅 OUR SPECIAL DAY
+            </div>
+
+
+            <strong id="selectedDate"></strong>
+
+        </div>
+
+
+        <p class="final-message">
+            Get ready for a beautiful day
+            and some amazing memories! ✨
+        </p>
+
+
+        
+        <div class="final-love">💗 ✨ 💗</div>
+    </div>
+
+    <!-- Creator credit at the bottom of the final page -->
+    <footer class="creator-credit">
+        <p>Lovingly created by</p>
+        <h3>Sudeep ❤️</h3>
+        <span>A little website, made with care ✨</span>
+    </footer>
+
+    </div>
+
+
+<script>
+
+const date =
+    localStorage.getItem("selectedDate");
+
+
+if (date) {
+
+    const formattedDate =
+        new Date(
+            date + "T00:00:00"
+        ).toLocaleDateString(
+            "en-IN",
+            {
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            }
+        );
+
+
+    document.getElementById(
+        "selectedDate"
+    ).textContent =
+        formattedDate;
+
+}
+
+</script>
+
+
+</body>
+
+</html>

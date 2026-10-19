@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Question ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+	<meta name="robots" content="noindex, nofollow">
+</head>
+
+<body class="home">
+
+    <!-- Dark layer over wallpaper -->
+    <div class="overlay"></div>
+
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <!-- Main invitation -->
+    <div class="invite-box">
+
+        <div class="small-heart">♡</div>
+
+        <h1>Hey You! ❤️</h1>
+
+        <p class="question">
+            I have a little question for you...
+        </p>
+
+        <p class="main-question">
+            Would you like to go on a day out with me? 🌸
+        </p>
+
+
+        <div class="buttons">
+
+            <button class="yes-btn" onclick="sayYes()">
+                Yes 💕
+            </button>
+
+            <button class="no-btn" onclick="sayNo()">
+                No
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- GIF in bottom-right corner -->
+    <img
+        src="heart.gif"
+        class="corner-gif"
+        alt="Cute animation"
+    >
+
+
+    <!-- Message shown after clicking No -->
+    <div id="noMessage"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
